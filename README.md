@@ -10,7 +10,7 @@
 **Members:**
 
 - Rodrigo Aranzaens Rodrigoao2999
-- Name and surname (Student ID)
+- Paolo Delgado PaoDeVi
 - Name and surname (Student ID)
 - Name and surname (Student ID)
 - Name and surname (Student ID)
