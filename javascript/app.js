@@ -2,8 +2,16 @@
 // Returns a sorted array
 function insertion_sort(numbers) {
 
-    //Write your code here
-
+    let n = numbers.length;
+    for (let i = 1; i < n; i++) {
+        let current = numbers[i];
+        let j = i - 1;
+        while ((j > -1) && (current < numbers[j])) {
+            numbers[j + 1] = numbers[j];
+            j--;
+        }
+        numbers[j + 1] = current;
+    }
     return [-1];
 }
 
@@ -12,7 +20,11 @@ function insertion_sort(numbers) {
 // Returns a single integer
 function factorial(number) {
 
-    //Write your code here
+    var total = 1;
+    for (i = 1; i <= number; i++) {
+        total = total * i;
+    }
+    return total;
 
     return -1;
 }
@@ -20,9 +32,15 @@ function factorial(number) {
 // Param number: single integer
 // Returns a single integer
 function fibonacci(number) {
+    var a = 0;
+    var b = 1;
 
-    //Write your code here
-
+    for (i = 0; i < number; i++) {
+        var temp = a;
+        a = b;
+        b = temp + b;
+        document.writeln(a + " ");
+    }
     return -1
 }
 
@@ -36,8 +54,8 @@ function evaluation(expression) {
 }
 
 
-if(typeof process === 'object') {
-    module.exports =  {
+if (typeof process === 'object') {
+    module.exports = {
         insertion_sort,
         factorial,
         fibonacci,
