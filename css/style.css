@@ -1,86 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    background: #F2F2F2;
+    background: #FFFFFA;
     margin: 0;
     font-family: "poppins";
 }
 
-.head_bar {
-    background: rgb(219, 100, 100);
-    text-align: center;
+header nav {
+     width: 25%;
+     height: 100%;
+     max-width:1000px;
+     margin:0;
+     background: #024959;
+     position:fixed;
+     left:-100%;
+}
+.menu_bar {
+    display:block;
+    width:100%;
+    background:#ccc;
+}
+header nav ul {
+    overflow:hidden;
+    list-style:none;
 }
 
-#menu_on {
-    display: inline-block;
-    width: 30px;
-    height: 20px;
-    position: relative;
-    z-index: 2;
-}
-
-#menu_on span {
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-    display: block;
-    position: absolute;
-    background: #fff;
-    transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
-    transform-origin: 0px 100%;
-}
-
-    #menu_on span:nth-child(2) {
-        top: calc(50% - 2px);
-    }
-
-    #menu_on span:nth-child(3) {
-        bottom: 0;
-    }
-nav {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: -300px; /* Escondemos nuestro menú con un valor negativo */
-    width: 300px;
-    z-index: 1;
-    padding: 90px 30px 30px;
-    background: #68C5DB;
-    opacity: 0;
-    transition: all 0.75s ease;
-    font-size: 1.2em;
-    overflow-y: auto;
-}
-    nav a {
+    header nav ul li {
+        float: left;
         display: block;
-        text-decoration: none;
-        padding: 10px;
-        color: rgba(255,255,255,0.75);
-        border-bottom: 1px solid rgba(255,255,255,0.2);
-        transition: all ease 0.25s;
+        float: none;
+        border-bottom: 1px solid rgba(255,255,255, .3)
     }
 
-        nav a:hover {
-            color: rgba(255,255,255,1);
-            border-bottom-color: rgba(255,255,255,0.4);
-        }
+header nav ul li a {
+    color:#fff;
+    padding: 20px;
+    display:block;
+    text-decoration:none;
 
-.visible_menu span:nth-child(1) {
-    transform: rotate(45deg) translate(-2px,1px);
+}
+header nav ul li span {
+
+    margin-right:10px;
+    font-size: 1.7em;
+}
+header nav ul li a:hover {
+    background:#037E8C;
+}
+section {
+    padding: 20px;
+}
+.menu_bar .bt-menu {
+    display: block;
+    padding: 30px;
+    background: #024959;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
 }
 
-.visible_menu span:nth-child(2) {
-    opacity: 0;
+.menu_bar span {
+    margin:0;
+    padding:0;
+    float:left;
+    font-size: 40px;
 }
 
-.visible_menu span:nth-child(3) {
-    transform: rotate(-45deg) translate(-3px,3px);
-}
-
-.visible_menu nav {
-    left: 0;
-    opacity: 1;
-}
-.visible_menu #content {
-    transform: translateX(260px);
-}
