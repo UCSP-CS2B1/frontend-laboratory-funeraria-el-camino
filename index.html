@@ -3,54 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Frontend Laboratory</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="stylelogos.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-sacalable=no, initial-scale=1.0, maximun-scale=1.0;minimu-sacale=1.0;" />
 
 
-    <!-- Primero cargamos Jquery -->
-    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
-    </script>
 
-    <!-- Creamos nuestra función -->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#menu_on').click(function () { // Al hacer click...
-                $('body').toggleClass('visible_menu'); // Añadimos o eliminamos la clase 'visible_menu' al body
-            })
-        });
-    </script>
 </head>
 
 <body>
-    <div class="head_bar">
-        <h1>FronteEnd Project</h1>
-    </div>
-    <div id="wrapper">
-        <header id="#header">
-            <a href="#" id="menu_on">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </header>
+    <header>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><span class="icon-menu"></span>Frontend Project</a>
+        </div>
+
+
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                ....
+                <li><a href="#"><span class="icon-users"></span>Team</a></li>
+                <li><a href="#"><span class="icon-embed2"></span>Algorithms</a></li>
             </ul>
         </nav>
-        <section id="content">
-            ...Contenido...
-        </section>
-    </div>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Algorithms</a></li>
-
-        </ul>
-    </nav>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>
+
