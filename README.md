@@ -11,12 +11,12 @@
 
 - Rodrigo Aranzaens Rodrigoao2999
 - Paolo Delgado PaoDeVi
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
+- Joaquin Casusol Escalante JoaquinCE202
+- Fabian Concha Sifuentes Fabian2727
+- Sebastian Tinajeros Tinajeros DraccoSTE
 
 ---
-
+###Profesor, solo comentarle si podria ejecutarlo desde local para que nuestro avance se vea realmente evidenciado, ya que en pages ciertas funciones no estaban funcionando bien.
 ## Instructions
 
 Consider the following folders tree:
