@@ -12,7 +12,7 @@ function insertion_sort(numbers) {
         }
         numbers[j + 1] = current;
     }
-    return [-1];
+    return [numbers];
 }
 
 
@@ -25,8 +25,6 @@ function factorial(number) {
         total = total * i;
     }
     return total;
-
-    return -1;
 }
 
 // Param number: single integer
@@ -41,7 +39,6 @@ function fibonacci(number) {
         b = temp + b;
         document.writeln(a + " ");
     }
-    return -1
 }
 
 // Param expression: string containing a mathematical expression
